@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cozy Reads</title>
+    <link rel="icon" href="./images/bookshelf.png">
+
+    <!-- tailwind css link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <!--google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- flat icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="./style.css">
+    </link>
+
+</head>
+
+<body class="">
+    <!-- offer bar -->
+    <div class="offer-bar flex items-center justify-center  m-1 p-2 bg-red-300">
+        <p id="">Independence day <b>SALE</b> is Live Now. <b> Get 20% OFF</b> on All Books.</p>
+        <button id="offer-close" style="margin-left: 2%; cursor: pointer;">X</button>
+        <!-- <i id="offer-close" class="fa-solid fa-xmark" style="margin-left: 2%; cursor: pointer;"></i> -->
+    </div>
+
+    <!-- Navbar Section -->
+    <nav class="navbar bg-white m-2 p-0 flex items-center justify-between sticky top-0 z-10">
+        <div class="navbar-sec1 flex items-center">
+            <img class="w-12" src="./images/bookshelf.png" alt="">
+            <h1 class="font-bold text-2xl sm:">Cozy Reads</h1>
+        </div>
+        <div id="navbar-sec2" class="md:flex gap-10 font-semibold ">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#best-seller" class="best-seller-link" >Best Seller</a></p>
+            <!-- categories dropdown -->
+            <div class="dropdown">
+                <a class="dropdown-btn" href="./categories.html" target="_blank">Categories</a>
+                <div class="dropdown-con">
+                    <a>Fiction</a>
+                    <a>Non-Fiction</a>
+                    <a>Fantasy</a>
+                    <a>Children</a>
+                    <a>Rom-Com</a>
+                    <a>Text-Books</a>
+                </div>
+            </div>
+            <p><a href="#todays-deal" class="todays-deal-link">Today's Deal</a></p>
+            <p><i class="fa-solid fa-cart-shopping"></i></p>
+            <p><a href="./contactus.html">Contact Us</a></p>
+
+        </div>
+
+        <!-- Menu bar -->
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars "></i>
+        </div>
+    </nav>
+    <!-- Side navbar -->
+    <div class="side-nav">
+        <p>
+            <i id="side-nav-close" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-nav-con ">
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="#best-seller" class="best-seller-link">Best Seller</a></p>
+            <p><a href="#todays-deal" class="todays-deal-link">Today's Deal</a></p>
+            <p><a href="./contactus.html">Contact Us</a></p>
+        </div>
+
+
+    </div>
+
+    <!-- slider bar -->
+    <div class="carousel">
+        <div class="slider-left-button">
+            <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="slider-content">
+            <h1 class="text-6xl font-bold">Amazing books on Your Way</h1>
+            <button class=" m-5 p-2 text-xl bg-red-400 "><a href="./bestseller.html" target="_blank">Buy
+                    Now</a></button>
+
+        </div>
+
+        <div class="carousel-slide ">
+            <img class="slider-img" src="./images/img4.jpg" width="100%" alt="">
+            <img class="slider-img" src="./images/img1.jpg" width="100%" alt="">
+            <img class="slider-img" src="./images/img4.jpg" width="100%" alt="">
+
+        </div>
+        <div class="slider-right-button">
+
+            <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+        </div>
+
+    </div>
+    <!-- Dots section -->
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <div>
+
+   <!-- icon container -->
+    <h2 class="text-2xl font-bold text-left mt-2 ml-4" >Categories</h2>
+    <div class="icon-sec p-6  grid grid-cols-7 sm:grid-cols-7">
+        <div class="icon-items ">
+              <img src="./images/best-seller.png" class="w-16 h-16 mb-2" alt="">
+              <p class="font-bold ">Best Seller</p>
+        </div>
+        <div class="icon-items">
+                <img src="./images/award-symbol.png" class="w-16 h-16 mb-2" alt="">
+                <p class="font-bold ">Award Winners</p>
+        </div>
+        <div class="icon-items">
+                <img src="./images/international-literacy-day.png" class="w-16 h-16 mb-2" alt="">
+                <p class="font-bold">World </p>
+        </div>
+        <div class="icon-items">
+                <img src="./images/board.png" class="w-16 h-16 mb-2" alt="">
+                <p class="font-bold">New Arrivals</p>
+        </div>
+
+
+        <div class="icon-items">
+                <img src="./images/open-book.png" class="w-16 h-16 mb-2" alt="">
+                <p class="font-bold">Non-Fiction</p>
+        </div>
+        <div class="icon-items">
+                <img src="./images/fiction.png" class="w-16 h-16 mb-2" alt="">
+                <p class="font-bold ">Fiction </p>
+        </div>
+        <div class="icon-items">
+                <img src="./images/magic-book.png"class="w-16 h-16 mb-2" alt="">
+                <p class="font-bold ">Fantasy</p>
+        </div>
+    </div>
+
+    <!-- experience sec -->
+     <div class="initial-scroll-animate reveal-scroll-animate">
+        <div class="service">
+            <div class="service-con1">
+                <div>
+                    <h2 class="text-left font-bold text-2xl ml-5">Best Customer experience <i class="fa-solid fa-user"></i></h2>
+                    <p class="p-2 text-left ml-5 font-medium hover:no-underline">We ensure that our Customer have the best shopping experience!!</p>
+                </div>
+            </div>
+            <div class="service-con2">
+                <div>
+                     <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+                     <h4 class="font-bold">Original Books</h4>
+                     <p>Books made with quality materials and sourced from authorized publishers.</p>
+                </div>
+                <div>
+                     <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                     <h4 class="font-bold">Fast shipping</h4>
+                     <p>We provide safe and fast shipping services to your door.</p>
+                </div>
+                <div>
+                    <i style="font-size: 3vw;margin-bottom:10px ;" class="fa-solid fa-tags"></i>
+                    <h4 class="font-bold">New Arrivals</h4>
+                    <p>The best selling and future release books around the world.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+     </div>
+
+     <!-- Best Seller section -->
+
+    <div class="initial-scroll-animate reveal-scroll-animate">
+        <h2 id="best-seller" class="m-5 text-left text-2xl font-bold">Best Seller</h2>
+
+        <div class="best-seller grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-5">
+
+            <div class="best-seller-con ">
+                <img class="w-full max-w-sm md:max-w-md object-cover" src="./images/bsimg1.png" class="w-full object-cover" alt="">
+                <div class="overlay"></div>
+                <p class="mt-2 font-semibold">Ikigai</p>
+                <p>⭐⭐⭐⭐</p>
+                <p>$19</p>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="best-seller-con">
+                <img  class="w-full max-w-sm md:max-w-md object-cover" src="./images/bsimg2.png" class="w-full object-cover" alt="">
+                <div class="overlay"></div>
+                <p>Its ends with us</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>$9.9</p>
+                 <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="best-seller-con">
+                <img class="w-full max-w-sm md:max-w-md object-cover"  src="./images/bsimg3.png" class="w-full object-cover" alt="">
+                <div class="overlay"></div>
+                <p>Ponniyin Selvan</p>
+                <p>⭐⭐⭐⭐</p>
+                <p>$15</p>
+                 <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="best-seller-con">
+                <img class="w-full max-w-sm md:max-w-md object-cover"  src="./images/bsimg4.png" class="w-full object-cover" alt="">
+                <div class="overlay"></div>
+                <p>The Alchemist</p>
+                <p>⭐⭐⭐⭐</p>
+                <p>$7.89</p>
+                 <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="best-seller-con">
+                <img class="w-full max-w-sm md:max-w-md object-cover" src="./images/bsimg5.png" class="w-full object-cover" alt="">
+                <div class="overlay"></div>
+                <p>Wings of Fire</p>
+                <p>⭐⭐⭐⭐</p>
+                <p>$8.00</p>
+                 <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+
+        </div>
+        <div class="best-seller grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-5 ">
+
+            <div class="best-seller-con">
+                <img class="w-full max-w-sm md:max-w-md object-cover" src="./images/bsimg6.png" alt="">
+                <div class="overlay"></div>
+                <p>Harry Potter</p>
+                <p>⭐⭐⭐⭐</p>
+                <p>$19</p>
+                 <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="best-seller-con">
+                <img class="w-full max-w-sm md:max-w-md object-cover" src="./images/bsimg7.png" alt="">
+                <div class="overlay"></div>
+                <p>Stephan Hawking</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>$9.9</p>
+                 <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="best-seller-con">
+                <img class="w-full max-w-sm md:max-w-md object-cover" src="./images/bsimg8.png" alt="">
+                <div class="overlay"></div>
+                <p>Psychology of Moeny</p>
+                <p>⭐⭐⭐⭐</p>
+                <p>$15</p>
+                 <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="best-seller-con">
+                <img class="w-full max-w-sm md:max-w-md object-cover"  src="./images/bsimg9.png" alt="">
+                <div class="overlay"></div>
+                <p>Atomic Habits</p>
+                <p>⭐⭐⭐⭐</p>
+                <p>$7.89</p>
+                 <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="best-seller-con">
+                <img class="w-full max-w-sm md:max-w-md object-cover" src="./images/bsimg10.png" alt="">
+                <div class="overlay"></div>
+                <p>Rich Dad Poor Dad</p>
+                <p>⭐⭐⭐⭐</p>
+                <p>$8.00</p>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+
+        </div>
+
+    </div> 
+    <!-- Today's Deal -->
+    <div class="initial-scroll-animate reveal-scroll-animate">
+        <h2 id="todays-deal" class="m-5 text-left text-2xl font-bold">Today's Deal</h2>
+        
+        <div class="todays-deal m-5">
+         <div class="todays-deal-con">
+            <img src="./images/tdimg1.png">
+            <p class="sale-overlay absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale</p>
+            <img class="like-button " src="./images/heart.png">
+        </div>
+        <div class="todays-deal-con">
+            <img src="./images/tdimg2.png">
+            <p class="sale-overlay absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale</p>
+            <img class="like-button" src="./images/heart.png">
+        </div>
+        <div class="todays-deal-con">
+            <img src="./images/tdimg3.png">
+            <p class="sale-overlay absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale</p>
+            <img class="like-button" src="./images/heart.png">
+        </div>
+        <div class="todays-deal-con">
+            <img src="./images/tdimg4.png">
+            <p class="sale-overlay absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale</p>
+            <img class="like-button" src="./images/heart.png">
+        </div>
+        <div class="todays-deal-con">
+            <img src="./images/tdimg5 (1).png">
+            <p class="sale-overlay absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale</p>
+            <img class="like-button" src="./images/heart.png">
+        </div>
+        <!-- <div class="todays-deal-con">
+            <img src="./images/tdimg6.png">
+            <p class="sale-overlay absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale</p>
+            <img class="like-button" src="./images/heart.png">
+        </div>
+        <div class="todays-deal-con">
+            <img src="./images/tdimg8.png">
+            <p class="sale-overlay absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale</p>
+            <img class="like-button" src="./images/heart.png">
+        </div>  -->
+        </div>
+    </div>
+
+    <!-- Limited offer -->
+   
+         <div class="initial-scroll-animate reveal-scroll-animate " >
+          <section class=" m-5 p-2 flex gap-10">
+            <div class="">
+              <img style="width: 400px; height: 400px; padding: 20px; margin: 5px;" src="./images/offer img.jfif">
+            </div>
+            <div class="mt-7">
+                <h1 class="font-bold text-2xl p-5">Independence Day SALE!!! </h1>
+                <h4 class="text-xl p-8 flex items-center">Get 50% offer on Text Books! <img style="width: 40px;"   src="./images/discount.png"></h4>
+                <button class="bg-black text-white p-2 "> Shop Now</button>
+            </div>
+
+          </section>
+
+         </div>
+
+<!-- news section -->
+
+     <!-- footer section -->
+      <div class="footer bg-red-300">
+        <div class="footer-container m-5 ">
+            <div class="footer-box1 p-5 flex justify-end items-center">
+                <img class="w-12" src="./images/bookshelf.png" alt="">
+                <h1 class="text-3xl font-bold text-right">Cozy Reads</h1>
+            </div>
+             <p class="text-right font-medium hover:no-underline">Do not go where the path may lead, Go instead where there is no path and leave a trail.</p>
+            <div class="footer-icon flex justify-end p-5 gap-20 text-3xl">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </div>
+        </div>
+
+        <p class="text-right p-5 font-semibold hover:no-underline"> CozyReads.com</p>
+
+      </div>
+
+            <script type="module" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <!-- tailwind css link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <!--google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- flat icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    </link>
+
+</head>
+
+<body>
+    <!-- offer bar -->
+    <div class="offer-bar flex bg-red-300 items-center justify-center m-1 p-2">
+        <p>Independence day <b>SALE</b>is live now. <b>GET 20% OFF</b>on All Books.</p>
+        <button id="offer-close" style="margin-left: 2%; cursor: pointer;">X</button>
+    </div>
+
+    <!--navbar  -->
+    <nav class="md:flex bg-white items-center m-2 p-0 justify-between sticky top-0 z-10  ">
+        <div class="flex items-center">
+            <img class="w-12" src="./images/bookshelf.png" alt="">
+            <h1 class="text-3xl font-bold">CozyReads</h1>
+        </div>
+
+        <div class="hidden md:flex justify-between gap-10 ">
+            <p class="font-semibold hover:no-underline"><a href="./index.html">Home</a></p>
+            <p class="font-semibold hover:no-underline"><a href="./contactus.html">Contact Us</a></p>
+
+        </div>
+        <!-- Menu bar -->
+        <div class=" menu-bar  text-right p-0 md:hidden ">
+            <i class="fa-solid fa-bars "></i>
+        </div>
+
+    </nav>
+    <!-- side nav -->
+    <div id="side-nav" class=" flex flex-col md:hidden">
+        <p><i id="side-nav-close" class="fa-solid fa-xmark"></i></p>
+
+
+        <div class="side-nav-con ">
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="./contactus.html">Contact Us</a></p>
+
+        </div>
+    </div>
+
+    <!-- container section -->
+    <div class="container m-5 ">
+        <div class="divide-sec flex">
+            <div class="filter-sec flex-basis">
+                <h3 class="filter-sec-collection font-bold">Collection</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="Fiction">Fiction<br>
+                    <input type="checkbox" name="tags" value="Inspiration">Inspiration<br>
+                    <input type="checkbox" name="tags" value="Self-Analysis">Self-Analysis
+
+                </div>
+                <h3 class="filter-sec-price font-bold">Price Range</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="$10">$10<br>
+                    <input type="checkbox" name="tags" value="$9">$9<br>
+                    <input type="checkbox" name="tags" value="$8">$8<br>
+                    <input type="checkbox" name="tags" value="$11">$11
+                </div>
+                <h3 class="filter-sec-reviews font-bold">Reviews</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="10K views">10K views<br>
+                    <input type="checkbox" name="tags" value="11K views">11K views<br>
+                    <input type="checkbox" name="tags" value="9K views">9K views<br>
+                    <input type="checkbox" name="tags" value="8K views">8K views
+                </div>
+                <hr class="vertical-line">
+            </div>
+            <!-- book search section -->
+            <div class="book-sec">
+                <form class="navbar-search">
+                    <input type="search" placeholder="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+                <div class="books">
+
+                </div>
+
+            </div>
+            
+
+        </div>
+
+        <!-- News section -->
+            <div class="news">
+               <h2>Join Our Community</h2>
+               <p class="flex">Sign up and Get exclusive offers and discounts<img src="./images/discount.png" class="w-8 text-center"></p>
+               <div style="margin-top: 10px;">
+                 <input class="search">
+               </div>
+               <div>
+                <button class="bg-black text-white p-2 rounded-xl">Get Subscription</button>
+               </div>
+            </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer bg-red-300">
+        <div class="footer-container m-5 ">
+            <div class="footer-box1 p-5 flex justify-end items-center">
+                <img class="w-12" src="./images/bookshelf.png" alt="">
+                <h1 class="text-3xl font-bold text-right">Cozy Reads</h1>
+            </div>
+            <p class="text-right font-medium hover:no-underline">Do not go where the path may lead, Go instead where
+                there is no path and leave a trail.</p>
+            <div class="footer-icon flex justify-end p-5 gap-20 text-3xl">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </div>
+        </div>
+
+        <p class="text-right p-5 font-semibold hover:no-underline"> CozyReads.com</p>
+
+    </div>
+
+
+
+
+    <script type="module" src="categories.js"></script>
+</body>
+
+</html>
